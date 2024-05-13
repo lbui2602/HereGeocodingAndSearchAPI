@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements IClickItem {
                     public void run() {
                         callApi(newText);
                     }
-                }, 500);
+                }, 100);
                 return true;
             }
         });
