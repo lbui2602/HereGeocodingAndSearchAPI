@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity implements IClickItem {
                                 double latitude = location.getLatitude();
                                 double longitude = location.getLongitude();
                                 at=latitude+","+longitude;
-                                Log.d("TAG", "onSuccess: "+at);
                             }
                         }
                     });
@@ -128,7 +127,6 @@ public class MainActivity extends AppCompatActivity implements IClickItem {
                         if (itemResponse != null) {
                             listItem.clear();
                             listItem.addAll(itemResponse.getItems());
-                            Log.d("TAG", "onResponse: " + listItem.size());
                             getData(q);
                         }
                     }
@@ -164,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements IClickItem {
                 recreate();
 
             } else {
-                Toast.makeText(this, "Vui long cat quyen chia se vi tri de su dung ung dung", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please grant location permission to use the application.", Toast.LENGTH_SHORT).show();
             }
         }
     }
