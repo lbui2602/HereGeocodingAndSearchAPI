@@ -9,24 +9,24 @@
         android:id="@+id/imgLocation"
         android:src="@drawable/icon_location"
         android:layout_width="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="25dp"
         android:layout_margin="5dp"
         android:layout_weight="1"/>
     <TextView
         android:id="@+id/tvTitle"
-        android:text="this is a text"
+        android:text="this is a textkdsjfksjdgbkjdbgkjbgkjfsgkjdfkjgbdfskjgkjfsdgkjdfsgkjsdf"
         android:layout_margin="5dp"
         android:layout_width="0dp"
         android:layout_weight="8"
         android:textColor="@color/black"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
     <ImageView
         android:id="@+id/imgDirection"
         android:src="@drawable/icon_direction"
         android:layout_width="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="25dp"
         android:layout_margin="5dp"
         android:layout_weight="1"/>
 </LinearLayout>

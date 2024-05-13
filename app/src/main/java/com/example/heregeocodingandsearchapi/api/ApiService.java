@@ -7,6 +7,6 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface ApiService {
-    @GET("geocode")
-    Call<ItemResponse> getGeocode(@Query("apikey") String apiKey, @Query("q") String query);
+    @GET("autosuggest")
+    Call<ItemResponse> getSearch(@Query("apikey") String apiKey,@Query("limit") int limit,@Query("at") String location, @Query("q") String query);
 }

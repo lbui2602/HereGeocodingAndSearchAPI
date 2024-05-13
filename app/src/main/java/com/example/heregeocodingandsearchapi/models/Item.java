@@ -1,9 +1,8 @@
-package com.example.heregeocodingandsearchapi.models;
+package com.example.heregeocodingandsearchapi.models; ;
 
-
+import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
 
 public class Item {
 
@@ -22,12 +21,30 @@ public class Item {
     @SerializedName("position")
     @Expose
     private Position position;
+    @SerializedName("access")
+    @Expose
+    private List<Access> access;
+    @SerializedName("distance")
+    @Expose
+    private Integer distance;
+    @SerializedName("categories")
+    @Expose
+    private List<Category> categories;
+    @SerializedName("references")
+    @Expose
+    private List<Reference> references;
+    @SerializedName("highlights")
+    @Expose
+    private Highlights highlights;
     @SerializedName("mapView")
     @Expose
     private MapView mapView;
-    @SerializedName("scoring")
+    @SerializedName("chains")
     @Expose
-    private Scoring scoring;
+    private List<Chain> chains;
+    @SerializedName("foodTypes")
+    @Expose
+    private List<FoodType> foodTypes;
 
     public String getTitle() {
         return title;
@@ -69,6 +86,46 @@ public class Item {
         this.position = position;
     }
 
+    public List<Access> getAccess() {
+        return access;
+    }
+
+    public void setAccess(List<Access> access) {
+        this.access = access;
+    }
+
+    public Integer getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Integer distance) {
+        this.distance = distance;
+    }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
+    }
+
+    public List<Reference> getReferences() {
+        return references;
+    }
+
+    public void setReferences(List<Reference> references) {
+        this.references = references;
+    }
+
+    public Highlights getHighlights() {
+        return highlights;
+    }
+
+    public void setHighlights(Highlights highlights) {
+        this.highlights = highlights;
+    }
+
     public MapView getMapView() {
         return mapView;
     }
@@ -77,12 +134,20 @@ public class Item {
         this.mapView = mapView;
     }
 
-    public Scoring getScoring() {
-        return scoring;
+    public List<Chain> getChains() {
+        return chains;
     }
 
-    public void setScoring(Scoring scoring) {
-        this.scoring = scoring;
+    public void setChains(List<Chain> chains) {
+        this.chains = chains;
+    }
+
+    public List<FoodType> getFoodTypes() {
+        return foodTypes;
+    }
+
+    public void setFoodTypes(List<FoodType> foodTypes) {
+        this.foodTypes = foodTypes;
     }
 
 }

@@ -1,5 +1,4 @@
-package com.example.heregeocodingandsearchapi.models;
-
+package com.example.heregeocodingandsearchapi.models; ;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
